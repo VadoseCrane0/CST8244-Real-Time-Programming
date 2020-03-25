@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <ctype.h>
+#include <string.h>
+#include <signal.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <fcntl.h>
+
+sem_t* sem;
+
+int main(void) {
+	int numWakeup=0, i;
+	sem = sem_open("Lab04_Semaphore", 0);
+	printf("thread-waker PID: %d\n", getpid());
+	do {
+		printf("How many threads do you want to wake-up(0 to exit)?\n");
+		scanf(" %d", numWakeup);
+		if (numWakeup > 0)
+			for (i = 0; i < numWakeup; i++) {
+				//increment the semaphore by one allowing a seller to get access.
+				sem_post(&sem);
+			}
+		else
+			printf("invalid number");
+	} while (numWakeup != 0);
+
+	return EXIT_SUCCESS;
+}

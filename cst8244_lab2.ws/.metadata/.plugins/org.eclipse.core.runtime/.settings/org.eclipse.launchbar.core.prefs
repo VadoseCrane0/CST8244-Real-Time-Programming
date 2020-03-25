@@ -1,0 +1,14 @@
+LaunchTargetManager/com.qnx.tools.ide.target.qconn,192.168.23.128/RELEASE=7.0.0
+LaunchTargetManager/com.qnx.tools.ide.target.qconn,192.168.23.128/arch=x86_64
+LaunchTargetManager/com.qnx.tools.ide.target.qconn,192.168.23.128/os=qnx
+LaunchTargetManager/com.qnx.tools.ide.target.qconn,Target\ Name/RELEASE=7.0.0
+LaunchTargetManager/com.qnx.tools.ide.target.qconn,Target\ Name/arch=x86_64
+LaunchTargetManager/com.qnx.tools.ide.target.qconn,Target\ Name/os=qnx
+LaunchTargetManager/configs/bin.my_first_project=com.qnx.tools.ide.target.qconn\:192.168.23.128
+LaunchTargetManager/configs/my_first_project=com.qnx.tools.ide.target.qconn\:Target Name
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+com.qnx.tools.ide.qde.debug.core.descriptorType.project\:P/my_first_project/activeLaunchMode=run
+com.qnx.tools.ide.qde.debug.core.descriptorType.project\:P/my_first_project/activeLaunchTarget=com.qnx.tools.ide.target.qconn\:Target Name
+configDescList=com.qnx.tools.ide.qde.debug.core.descriptorType.default\:bin.my_first_project,com.qnx.tools.ide.qde.debug.core.descriptorType.project\:P/my_first_project
+eclipse.preferences.version=1

@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+
+int main(void) {
+	puts("Hello World from QNX Neutrino RTOS!!!"); /* prints Hello World!!! */
+	puts("@author Joseph Trottier (trot0097@algonquinlive.com)");
+	puts("TODO: 'display something unique about myself' ");
+	printf("\nmy pid: %d  parent pid: %d", getpid(), getppid());
+	return EXIT_SUCCESS;
+}

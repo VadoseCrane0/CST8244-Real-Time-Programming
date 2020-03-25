@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;thread-factory/src/thread-factory.c&apos; to &apos;thread_factory.c&apos;" description="Rename resource &apos;thread-factory.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/thread-factory.c" name="thread_factory.c" stamp="1580668290099" updateReferences="true"/>
+</session>

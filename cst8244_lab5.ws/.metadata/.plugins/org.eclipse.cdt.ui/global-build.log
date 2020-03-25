@@ -1,0 +1,1844 @@
+09:58:08 **** Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+09:59:01 **** Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+10:52:06 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+11:11:02 **** Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+11:11:23 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c:3:45: fatal error: ..\calc_server\src\calc_message.h: No such file or directory
+compilation terminated.
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+11:12:03 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c:3:42: fatal error: calc_server\src\calc_message.h: No such file or directory
+compilation terminated.
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+11:12:38 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:26:1: error: expected identifier before '}' token
+ }
+ ^
+src/calc_client.c:19:7: warning: unused variable 'server_reply' [-Wunused-variable]
+  char server_reply[255];
+       ^
+src/calc_client.c:18:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num;
+      ^
+src/calc_client.c:17:6: warning: unused variable 'ret' [-Wunused-variable]
+  int ret;
+      ^
+src/calc_client.c:16:16: warning: variable 'equation' set but not used [-Wunused-but-set-variable]
+  client_send_t equation;
+                ^
+src/calc_client.c:15:6: warning: unused variable 'c' [-Wunused-variable]
+  int c;
+      ^
+src/calc_client.c:14:6: warning: unused variable 'fd' [-Wunused-variable]
+  int fd;
+      ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+13:21:52 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:28:24: error: 'ND_LOCAL_NODE' undeclared (first use in this function)
+  coid = ConnectAttach (ND_LOCAL_NODE, serverpid, 1, _NTO_SIDE_CHANNEL, 0);
+                        ^
+src/calc_client.c:28:24: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_client.c:35:9: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+     smsg->left_hand = atoi(argv[2]);
+         ^
+src/calc_client.c:36:9: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+     smsg->operator = argv[3];
+         ^
+src/calc_client.c:37:9: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+     smsg->right_hand = atoi(argv[4]);
+         ^
+src/calc_client.c:41:21: error: incompatible type for argument 2 of 'MsgSend'
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+                     ^
+In file included from src/calc_client.c:8:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:753:13: note: expected 'const void *' but argument is of type 'client_send_t {aka struct client_send}'
+ extern long MsgSend(int __coid, const void *__smsg, _Sizet __sbytes, void *__rmsg, _Sizet __rbytes);
+             ^
+src/calc_client.c:41:45: error: incompatible type for argument 4 of 'MsgSend'
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+                                             ^
+In file included from src/calc_client.c:8:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:753:13: note: expected 'void *' but argument is of type 'server_response_t {aka struct server_response}'
+ extern long MsgSend(int __coid, const void *__smsg, _Sizet __sbytes, void *__rmsg, _Sizet __rbytes);
+             ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+13:22:31 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:9: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+     smsg->left_hand = atoi(argv[2]);
+         ^
+src/calc_client.c:42:9: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+     smsg->operator = argv[3];
+         ^
+src/calc_client.c:43:9: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+     smsg->right_hand = atoi(argv[4]);
+         ^
+src/calc_client.c:47:21: error: incompatible type for argument 2 of 'MsgSend'
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+                     ^
+In file included from src/calc_client.c:8:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:753:13: note: expected 'const void *' but argument is of type 'client_send_t {aka struct client_send}'
+ extern long MsgSend(int __coid, const void *__smsg, _Sizet __sbytes, void *__rmsg, _Sizet __rbytes);
+             ^
+src/calc_client.c:47:45: error: incompatible type for argument 4 of 'MsgSend'
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+                                             ^
+In file included from src/calc_client.c:8:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:753:13: note: expected 'void *' but argument is of type 'server_response_t {aka struct server_response}'
+ extern long MsgSend(int __coid, const void *__smsg, _Sizet __sbytes, void *__rmsg, _Sizet __rbytes);
+             ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+13:24:11 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+     smsg->operator = argv[3];
+                    ^
+src/calc_client.c:40:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+src/calc_client.c:46:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+13:25:50 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:15:29: warning: comparison between pointer and integer
+     if(argc != 2 || argv[1] != '&'){
+                             ^
+src/calc_server.c:21:12: warning: implicit declaration of function 'ChannelCreate' [-Wimplicit-function-declaration]
+     chid = ChannelCreate(0);
+            ^
+src/calc_server.c:32:17: warning: implicit declaration of function 'MsgReceive' [-Wimplicit-function-declaration]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+                 ^
+src/calc_server.c:34:23: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+         switch(message->operator){
+                       ^
+src/calc_server.c:36:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->right_hand == 0){
+                    ^
+src/calc_server.c:37:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            reply->statusCode = SRVR_UNDEFINED;
+                 ^
+src/calc_server.c:38:25: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            sprintf(reply->errorMsg,
+                         ^
+src/calc_server.c:41:21: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+              message->left_hand,
+                     ^
+src/calc_server.c:42:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->operator,
+               ^
+src/calc_server.c:43:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->right_hand
+               ^
+src/calc_server.c:47:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:48:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand / message->right_hand;
+               ^
+src/calc_server.c:48:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                 ^
+src/calc_server.c:48:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                                      ^
+src/calc_server.c:51:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                    ^
+src/calc_server.c:51:52: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                                                    ^
+src/calc_server.c:52:16: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           reply->statusCode = SRVR_OVERFLOW;
+                ^
+src/calc_server.c:53:24: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           sprintf(reply->errorMsg,
+                        ^
+src/calc_server.c:56:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->left_hand,
+              ^
+src/calc_server.c:57:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->operator,
+              ^
+src/calc_server.c:58:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->right_hand
+              ^
+src/calc_server.c:62:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:63:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand + message->right_hand;
+               ^
+src/calc_server.c:63:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                 ^
+src/calc_server.c:63:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                                      ^
+src/calc_server.c:66:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:67:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand - message->right_hand;
+               ^
+src/calc_server.c:67:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                 ^
+src/calc_server.c:67:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                                      ^
+src/calc_server.c:70:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:71:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand * message->right_hand;
+               ^
+src/calc_server.c:71:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                 ^
+src/calc_server.c:71:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                                      ^
+src/calc_server.c:74:9: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    reply->statusCode = SRVR_INVALID_OPERATOR;
+         ^
+src/calc_server.c:75:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    sprintf(reply->errorMsg,
+                 ^
+src/calc_server.c:78:13: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+      message->operator
+             ^
+src/calc_server.c:82:9: warning: implicit declaration of function 'MsgReply' [-Wimplicit-function-declaration]
+         MsgReply(rcvid, EOK, reply, sizeof(reply));
+         ^
+src/calc_server.c:82:25: error: 'EOK' undeclared (first use in this function)
+         MsgReply(rcvid, EOK, reply, sizeof(reply));
+                         ^
+src/calc_server.c:82:25: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_server.c:86:5: warning: implicit declaration of function 'ChannelDestroy' [-Wimplicit-function-declaration]
+     ChannelDestroy(chid);
+     ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+13:26:20 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:22:29: warning: comparison between pointer and integer
+     if(argc != 2 || argv[1] != '&'){
+                             ^
+src/calc_server.c:39:34: error: incompatible type for argument 2 of 'MsgReceive'
+         rcvid = MsgReceive(chid, message, sizeof(message),
+                                  ^
+In file included from src/calc_server.c:8:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:769:12: note: expected 'void *' but argument is of type 'client_send_t {aka struct client_send}'
+ extern int MsgReceive(int __chid, void *__msg, _Sizet __bytes, struct _msg_info *__info);
+            ^
+src/calc_server.c:41:23: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+         switch(message->operator){
+                       ^
+src/calc_server.c:43:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->right_hand == 0){
+                    ^
+src/calc_server.c:44:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            reply->statusCode = SRVR_UNDEFINED;
+                 ^
+src/calc_server.c:45:25: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            sprintf(reply->errorMsg,
+                         ^
+src/calc_server.c:48:21: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+              message->left_hand,
+                     ^
+src/calc_server.c:49:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->operator,
+               ^
+src/calc_server.c:50:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->right_hand
+               ^
+src/calc_server.c:54:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:55:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand / message->right_hand;
+               ^
+src/calc_server.c:55:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                 ^
+src/calc_server.c:55:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                                      ^
+src/calc_server.c:58:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                    ^
+src/calc_server.c:58:52: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                                                    ^
+src/calc_server.c:59:16: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           reply->statusCode = SRVR_OVERFLOW;
+                ^
+src/calc_server.c:60:24: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           sprintf(reply->errorMsg,
+                        ^
+src/calc_server.c:63:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->left_hand,
+              ^
+src/calc_server.c:64:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->operator,
+              ^
+src/calc_server.c:65:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->right_hand
+              ^
+src/calc_server.c:69:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:70:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand + message->right_hand;
+               ^
+src/calc_server.c:70:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                 ^
+src/calc_server.c:70:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                                      ^
+src/calc_server.c:73:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:74:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand - message->right_hand;
+               ^
+src/calc_server.c:74:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                 ^
+src/calc_server.c:74:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                                      ^
+src/calc_server.c:77:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:78:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand * message->right_hand;
+               ^
+src/calc_server.c:78:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                 ^
+src/calc_server.c:78:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                                      ^
+src/calc_server.c:81:9: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    reply->statusCode = SRVR_INVALID_OPERATOR;
+         ^
+src/calc_server.c:82:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    sprintf(reply->errorMsg,
+                 ^
+src/calc_server.c:85:13: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+      message->operator
+             ^
+src/calc_server.c:89:25: error: 'EOK' undeclared (first use in this function)
+         MsgReply(rcvid, EOK, reply, sizeof(reply));
+                         ^
+src/calc_server.c:89:25: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_server.c:89:30: error: incompatible type for argument 3 of 'MsgReply'
+         MsgReply(rcvid, EOK, reply, sizeof(reply));
+                              ^
+In file included from src/calc_server.c:8:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:777:12: note: expected 'const void *' but argument is of type 'server_response_t {aka struct server_response}'
+ extern int MsgReply(int __rcvid, long __status, const void *__msg, _Sizet __bytes);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+13:26:33 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:22:29: warning: comparison between pointer and integer
+     if(argc != 2 || argv[1] != '&'){
+                             ^
+src/calc_server.c:89:25: error: 'EOK' undeclared (first use in this function)
+         MsgReply(rcvid, EOK, reply, sizeof(reply));
+                         ^
+src/calc_server.c:89:25: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+13:28:13 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:22:29: warning: comparison between pointer and integer
+     if(argc != 2 || argv[1] != '&'){
+                             ^
+src/calc_server.c:89:25: error: 'EOK' undeclared (first use in this function)
+         MsgReply(rcvid, EOK, reply, sizeof(reply));
+                         ^
+src/calc_server.c:89:25: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+13:29:11 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:20:29: warning: comparison between pointer and integer
+     if(argc != 2 || argv[1] != '&'){
+                             ^
+src/calc_server.c:87:25: error: 'EOK' undeclared (first use in this function)
+         MsgReply(rcvid, EOK, reply, sizeof(reply));
+                         ^
+src/calc_server.c:87:25: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+13:29:33 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:20:29: warning: comparison between pointer and integer
+     if(argc != 2 || argv[1] != '&'){
+                             ^
+src/calc_server.c:37:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:42:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+13:32:28 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:37:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:42:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+13:33:01 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:33:06 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:35:04 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:37:17 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:21:18 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:41:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:46:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:21:44 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:41:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:46:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:22:11 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:42:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:47:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:22:25 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:42:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:47:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:23:12 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:23:15 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:42:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+     smsg->operator = argv[3];
+                    ^
+src/calc_client.c:41:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+src/calc_client.c:47:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+14:26:02 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:42:20: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->operator = argv[3][0];
+                    ^
+src/calc_client.c:47:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+14:26:08 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+src/calc_client.c:47:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+14:27:40 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:27:43 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:44:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:49:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:29:27 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:26:16: warning: comparison between pointer and integer
+     if(argv[1] != '&'){
+                ^
+src/calc_server.c:44:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:49:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:31:05 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:26:16: warning: comparison between pointer and integer
+     if(argv[1] != '&'){
+                ^
+src/calc_server.c:49:12: error: 'reply' undeclared (first use in this function)
+            reply->statusCode = SRVR_UNDEFINED;
+            ^
+src/calc_server.c:49:12: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+14:31:06 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:26:16: warning: comparison between pointer and integer
+     if(argv[1] != '&'){
+                ^
+src/calc_server.c:49:12: error: 'reply' undeclared (first use in this function)
+            reply->statusCode = SRVR_UNDEFINED;
+            ^
+src/calc_server.c:49:12: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+14:31:31 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:26:16: warning: comparison between pointer and integer
+     if(argv[1] != '&'){
+                ^
+src/calc_server.c:44:34: error: incompatible type for argument 2 of 'MsgReceive'
+         rcvid = MsgReceive(chid, message, sizeof(message),
+                                  ^
+In file included from src/calc_server.c:6:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:769:12: note: expected 'void *' but argument is of type 'client_send_t {aka struct client_send}'
+ extern int MsgReceive(int __chid, void *__msg, _Sizet __bytes, struct _msg_info *__info);
+            ^
+src/calc_server.c:46:23: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+         switch(message->operator){
+                       ^
+src/calc_server.c:48:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->right_hand == 0){
+                    ^
+src/calc_server.c:49:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            reply->statusCode = SRVR_UNDEFINED;
+                 ^
+src/calc_server.c:50:25: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            sprintf(reply->errorMsg,
+                         ^
+src/calc_server.c:53:21: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+              message->left_hand,
+                     ^
+src/calc_server.c:54:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->operator,
+               ^
+src/calc_server.c:55:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->right_hand
+               ^
+src/calc_server.c:59:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:60:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand / message->right_hand;
+               ^
+src/calc_server.c:60:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                 ^
+src/calc_server.c:60:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                                      ^
+src/calc_server.c:63:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                    ^
+src/calc_server.c:63:52: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                                                    ^
+src/calc_server.c:64:16: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           reply->statusCode = SRVR_OVERFLOW;
+                ^
+src/calc_server.c:65:24: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           sprintf(reply->errorMsg,
+                        ^
+src/calc_server.c:68:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->left_hand,
+              ^
+src/calc_server.c:69:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->operator,
+              ^
+src/calc_server.c:70:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->right_hand
+              ^
+src/calc_server.c:74:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:75:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand + message->right_hand;
+               ^
+src/calc_server.c:75:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                 ^
+src/calc_server.c:75:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                                      ^
+src/calc_server.c:78:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:79:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand - message->right_hand;
+               ^
+src/calc_server.c:79:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                 ^
+src/calc_server.c:79:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                                      ^
+src/calc_server.c:82:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:83:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand * message->right_hand;
+               ^
+src/calc_server.c:83:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                 ^
+src/calc_server.c:83:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                                      ^
+src/calc_server.c:86:9: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    reply->statusCode = SRVR_INVALID_OPERATOR;
+         ^
+src/calc_server.c:87:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    sprintf(reply->errorMsg,
+                 ^
+src/calc_server.c:90:13: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+      message->operator
+             ^
+src/calc_server.c:94:28: error: incompatible type for argument 3 of 'MsgReply'
+         MsgReply(rcvid, 0, reply, sizeof(reply));
+                            ^
+In file included from src/calc_server.c:6:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:777:12: note: expected 'const void *' but argument is of type 'server_response_t {aka struct server_response}'
+ extern int MsgReply(int __rcvid, long __status, const void *__msg, _Sizet __bytes);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+14:32:32 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:26:16: warning: comparison between pointer and integer
+     if(argv[1] != '&'){
+                ^
+src/calc_server.c:44:9: error: cannot convert to a pointer type
+         rcvid = MsgReceive(chid, (void *)message, sizeof(message),
+         ^
+src/calc_server.c:46:23: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+         switch(message->operator){
+                       ^
+src/calc_server.c:48:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->right_hand == 0){
+                    ^
+src/calc_server.c:49:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            reply->statusCode = SRVR_UNDEFINED;
+                 ^
+src/calc_server.c:50:25: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            sprintf(reply->errorMsg,
+                         ^
+src/calc_server.c:53:21: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+              message->left_hand,
+                     ^
+src/calc_server.c:54:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->operator,
+               ^
+src/calc_server.c:55:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->right_hand
+               ^
+src/calc_server.c:59:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:60:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand / message->right_hand;
+               ^
+src/calc_server.c:60:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                 ^
+src/calc_server.c:60:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                                      ^
+src/calc_server.c:63:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                    ^
+src/calc_server.c:63:52: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                                                    ^
+src/calc_server.c:64:16: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           reply->statusCode = SRVR_OVERFLOW;
+                ^
+src/calc_server.c:65:24: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           sprintf(reply->errorMsg,
+                        ^
+src/calc_server.c:68:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->left_hand,
+              ^
+src/calc_server.c:69:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->operator,
+              ^
+src/calc_server.c:70:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->right_hand
+              ^
+src/calc_server.c:74:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:75:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand + message->right_hand;
+               ^
+src/calc_server.c:75:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                 ^
+src/calc_server.c:75:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                                      ^
+src/calc_server.c:78:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:79:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand - message->right_hand;
+               ^
+src/calc_server.c:79:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                 ^
+src/calc_server.c:79:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                                      ^
+src/calc_server.c:82:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:83:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand * message->right_hand;
+               ^
+src/calc_server.c:83:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                 ^
+src/calc_server.c:83:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                                      ^
+src/calc_server.c:86:9: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    reply->statusCode = SRVR_INVALID_OPERATOR;
+         ^
+src/calc_server.c:87:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    sprintf(reply->errorMsg,
+                 ^
+src/calc_server.c:90:13: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+      message->operator
+             ^
+src/calc_server.c:94:28: error: incompatible type for argument 3 of 'MsgReply'
+         MsgReply(rcvid, 0, reply, sizeof(reply));
+                            ^
+In file included from src/calc_server.c:6:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:777:12: note: expected 'const void *' but argument is of type 'server_response_t {aka struct server_response}'
+ extern int MsgReply(int __rcvid, long __status, const void *__msg, _Sizet __bytes);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+14:32:46 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:26:16: warning: comparison between pointer and integer
+     if(argv[1] != '&'){
+                ^
+src/calc_server.c:44:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:49:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:33:46 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:26:16: warning: comparison between pointer and integer
+     if(argv[1] != '&'){
+                ^
+src/calc_server.c:46:23: error: request for member 'operator' in something not a structure or union
+         switch(message->operator){
+                       ^
+src/calc_server.c:48:20: error: request for member 'right_hand' in something not a structure or union
+          if(message->right_hand == 0){
+                    ^
+src/calc_server.c:53:21: error: request for member 'left_hand' in something not a structure or union
+              message->left_hand,
+                     ^
+src/calc_server.c:54:15: error: request for member 'operator' in something not a structure or union
+        message->operator,
+               ^
+src/calc_server.c:55:15: error: request for member 'right_hand' in something not a structure or union
+        message->right_hand
+               ^
+src/calc_server.c:60:33: error: request for member 'left_hand' in something not a structure or union
+          reply->answer = message->left_hand / message->right_hand;
+                                 ^
+src/calc_server.c:60:54: error: request for member 'right_hand' in something not a structure or union
+          reply->answer = message->left_hand / message->right_hand;
+                                                      ^
+src/calc_server.c:63:20: error: request for member 'left_hand' in something not a structure or union
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                    ^
+src/calc_server.c:63:52: error: request for member 'right_hand' in something not a structure or union
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                                                    ^
+src/calc_server.c:68:14: error: request for member 'left_hand' in something not a structure or union
+       message->left_hand,
+              ^
+src/calc_server.c:69:14: error: request for member 'operator' in something not a structure or union
+       message->operator,
+              ^
+src/calc_server.c:70:14: error: request for member 'right_hand' in something not a structure or union
+       message->right_hand
+              ^
+src/calc_server.c:75:33: error: request for member 'left_hand' in something not a structure or union
+          reply->answer = message->left_hand + message->right_hand;
+                                 ^
+src/calc_server.c:75:54: error: request for member 'right_hand' in something not a structure or union
+          reply->answer = message->left_hand + message->right_hand;
+                                                      ^
+src/calc_server.c:79:33: error: request for member 'left_hand' in something not a structure or union
+          reply->answer = message->left_hand - message->right_hand;
+                                 ^
+src/calc_server.c:79:54: error: request for member 'right_hand' in something not a structure or union
+          reply->answer = message->left_hand - message->right_hand;
+                                                      ^
+src/calc_server.c:83:33: error: request for member 'left_hand' in something not a structure or union
+          reply->answer = message->left_hand * message->right_hand;
+                                 ^
+src/calc_server.c:83:54: error: request for member 'right_hand' in something not a structure or union
+          reply->answer = message->left_hand * message->right_hand;
+                                                      ^
+src/calc_server.c:90:13: error: request for member 'operator' in something not a structure or union
+      message->operator
+             ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+14:34:11 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:26:16: warning: comparison between pointer and integer
+     if(argv[1] != '&'){
+                ^
+src/calc_server.c:44:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, message, sizeof(message),
+               ^
+src/calc_server.c:49:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:34:23 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:26:16: warning: comparison between pointer and integer
+     if(argv[1] != '&'){
+                ^
+src/calc_server.c:44:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, (char *)message, sizeof(message),
+               ^
+src/calc_server.c:49:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:34:27 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:34:37 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:36:40 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:44:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, (char *)message, sizeof(message),
+               ^
+src/calc_server.c:49:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:45:33 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:44:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, (char *)message, sizeof(message),
+               ^
+src/calc_server.c:49:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:45:35 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:46:24 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:44:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, (char *)message, sizeof(message),
+               ^
+src/calc_server.c:49:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:46:40 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:44:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, (char *)message, sizeof(message),
+               ^
+src/calc_server.c:49:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:48:05 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:44:42: error: 'message' undeclared (first use in this function)
+         rcvid = MsgReceive(chid, (char *)message, sizeof(message),
+                                          ^
+src/calc_server.c:44:42: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_server.c:49:12: error: 'reply' undeclared (first use in this function)
+            reply->statusCode = SRVR_UNDEFINED;
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+14:48:46 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:16:9: warning: unused variable 'chid' [-Wunused-variable]
+     int chid;         // the channel ID
+         ^
+src/calc_server.c:15:9: warning: unused variable 'rcvid' [-Wunused-variable]
+     int rcvid;        // indicates who we should reply to
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:50:02 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:16:9: warning: unused variable 'chid' [-Wunused-variable]
+     int chid;         // the channel ID
+         ^
+src/calc_server.c:15:9: warning: unused variable 'rcvid' [-Wunused-variable]
+     int rcvid;        // indicates who we should reply to
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+14:50:04 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:50:13 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:51:07 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:33:15: warning: 'message' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         rcvid = MsgReceive(chid, (char *)message, sizeof(message),
+               ^
+src/calc_server.c:38:30: warning: 'reply' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            reply->statusCode = SRVR_UNDEFINED;
+                              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+15:07:59 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+src/calc_client.c:47:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:14:38 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+src/calc_client.c:47:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:14:41 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:18:24: warning: unused variable 'reply' [-Wunused-variable]
+     server_response_t *reply;
+                        ^
+src/calc_server.c:17:20: warning: unused variable 'message' [-Wunused-variable]
+     client_send_t *message;
+                    ^
+src/calc_server.c:15:9: warning: unused variable 'rcvid' [-Wunused-variable]
+     int rcvid;        // indicates who we should reply to
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+15:16:42 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:18:24: warning: unused variable 'reply' [-Wunused-variable]
+     server_response_t *reply;
+                        ^
+src/calc_server.c:17:20: warning: unused variable 'message' [-Wunused-variable]
+     client_send_t *message;
+                    ^
+src/calc_server.c:15:9: warning: unused variable 'rcvid' [-Wunused-variable]
+     int rcvid;        // indicates who we should reply to
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+15:19:01 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+src/calc_client.c:50:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:19:30 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:43:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+src/calc_client.c:52:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:19:58 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:43:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+src/calc_client.c:52:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:20:25 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:43:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+src/calc_client.c:52:6: warning: 'rmsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:20:53 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:36:2: error: 'coid' undeclared (first use in this function)
+  coid = ConnectAttach (ND_LOCAL_NODE, serverpid, 1, _NTO_SIDE_CHANNEL, 0);
+  ^
+src/calc_client.c:36:2: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_client.c:52:45: error: 'rmsg' undeclared (first use in this function)
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+                                             ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+15:21:27 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:43:5: error: 'smsg' undeclared (first use in this function)
+     smsg->left_hand = atoi(argv[2]);
+     ^
+src/calc_client.c:43:5: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_client.c:62:16: error: 'coid' undeclared (first use in this function)
+  ConnectDetach(coid);
+                ^
+src/calc_client.c:25:8: warning: variable 'serverpid' set but not used [-Wunused-but-set-variable]
+  pid_t serverpid;
+        ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+15:21:58 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:5: error: 'smsg' undeclared (first use in this function)
+     smsg->left_hand = atoi(argv[2]);
+     ^
+src/calc_client.c:41:5: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_client.c:60:16: error: 'coid' undeclared (first use in this function)
+  ConnectDetach(coid);
+                ^
+src/calc_client.c:23:8: warning: variable 'serverpid' set but not used [-Wunused-but-set-variable]
+  pid_t serverpid;
+        ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+15:22:18 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:60:16: error: 'coid' undeclared (first use in this function)
+  ConnectDetach(coid);
+                ^
+src/calc_client.c:60:16: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_client.c:23:8: warning: variable 'serverpid' set but not used [-Wunused-but-set-variable]
+  pid_t serverpid;
+        ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+15:22:29 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:23:8: warning: variable 'serverpid' set but not used [-Wunused-but-set-variable]
+  pid_t serverpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:22:31 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:22:35 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:23:04 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:23:8: warning: variable 'serverpid' set but not used [-Wunused-but-set-variable]
+  pid_t serverpid;
+        ^
+src/calc_client.c:20:17: warning: unused variable 'smsg' [-Wunused-variable]
+  client_send_t *smsg;
+                 ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:23:26 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:23:8: warning: variable 'serverpid' set but not used [-Wunused-but-set-variable]
+  pid_t serverpid;
+        ^
+src/calc_client.c:22:7: warning: unused variable 'coid' [-Wunused-variable]
+  int  coid;
+       ^
+src/calc_client.c:21:21: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t *rmsg;
+                     ^
+src/calc_client.c:20:17: warning: unused variable 'smsg' [-Wunused-variable]
+  client_send_t *smsg;
+                 ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:23:50 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:21:21: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t *rmsg;
+                     ^
+src/calc_client.c:20:17: warning: unused variable 'smsg' [-Wunused-variable]
+  client_send_t *smsg;
+                 ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:23:58 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:24:14 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:21:21: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t *rmsg;
+                     ^
+src/calc_client.c:20:17: warning: unused variable 'smsg' [-Wunused-variable]
+  client_send_t *smsg;
+                 ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:24:31 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:21:21: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t *rmsg;
+                     ^
+src/calc_client.c:41:21: warning: 'smsg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     smsg->left_hand = atoi(argv[2]);
+                     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:28:23 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:25: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  client_send_t *smsg = {atoi(argv[2]), argv[3][0], atoi(argv[4])};
+                         ^
+src/calc_client.c:41:25: note: (near initialization for 'smsg')
+src/calc_client.c:41:40: warning: excess elements in scalar initializer
+  client_send_t *smsg = {atoi(argv[2]), argv[3][0], atoi(argv[4])};
+                                        ^
+src/calc_client.c:41:40: note: (near initialization for 'smsg')
+src/calc_client.c:41:52: warning: excess elements in scalar initializer
+  client_send_t *smsg = {atoi(argv[2]), argv[3][0], atoi(argv[4])};
+                                                    ^
+src/calc_client.c:41:52: note: (near initialization for 'smsg')
+src/calc_client.c:41:17: warning: unused variable 'smsg' [-Wunused-variable]
+  client_send_t *smsg = {atoi(argv[2]), argv[3][0], atoi(argv[4])};
+                 ^
+src/calc_client.c:21:21: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t *rmsg;
+                     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:29:07 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:12: error: expected expression before '{' token
+     smsg = {atoi(argv[2]), argv[3][0], atoi(argv[4])};
+            ^
+src/calc_client.c:21:20: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t rmsg;
+                    ^
+src/calc_client.c:20:16: warning: variable 'smsg' set but not used [-Wunused-but-set-variable]
+  client_send_t smsg;
+                ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+15:30:05 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:21:20: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t rmsg;
+                    ^
+src/calc_client.c:20:16: warning: variable 'smsg' set but not used [-Wunused-but-set-variable]
+  client_send_t smsg;
+                ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:30:37 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:41:9: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+     smsg->left_hand = atoi(argv[2]);
+         ^
+src/calc_client.c:43:9: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+     smsg->operator = argv[3][0];
+         ^
+src/calc_client.c:45:9: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+     smsg->right_hand = atoi(argv[4]);
+         ^
+src/calc_client.c:21:20: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t rmsg;
+                    ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+15:30:53 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:21:20: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t rmsg;
+                    ^
+src/calc_client.c:20:16: warning: variable 'smsg' set but not used [-Wunused-but-set-variable]
+  client_send_t smsg;
+                ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:31:13 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:21:20: warning: unused variable 'rmsg' [-Wunused-variable]
+  server_response_t rmsg;
+                    ^
+src/calc_client.c:20:16: warning: variable 'smsg' set but not used [-Wunused-but-set-variable]
+  client_send_t smsg;
+                ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:31:53 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:44:21: error: incompatible type for argument 2 of 'MsgSend'
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+                     ^
+In file included from src/calc_client.c:8:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:753:13: note: expected 'const void *' but argument is of type 'client_send_t {aka struct client_send}'
+ extern long MsgSend(int __coid, const void *__smsg, _Sizet __sbytes, void *__rmsg, _Sizet __rbytes);
+             ^
+src/calc_client.c:44:45: error: incompatible type for argument 4 of 'MsgSend'
+  if (MsgSend (coid, smsg, sizeof(smsg) + 1, rmsg, sizeof(rmsg)) == -1L) {
+                                             ^
+In file included from src/calc_client.c:8:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:753:13: note: expected 'void *' but argument is of type 'server_response_t {aka struct server_response}'
+ extern long MsgSend(int __coid, const void *__smsg, _Sizet __sbytes, void *__rmsg, _Sizet __rbytes);
+             ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+15:32:12 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:44:2: error: cannot convert to a pointer type
+  if (MsgSend (coid, (void*)smsg, sizeof(smsg) + 1, (void*)rmsg, sizeof(rmsg)) == -1L) {
+  ^
+src/calc_client.c:44:2: error: cannot convert to a pointer type
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+15:32:33 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:32:44 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:34:44 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:35:23: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+         switch(message->operator){
+                       ^
+src/calc_server.c:37:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->right_hand == 0){
+                    ^
+src/calc_server.c:38:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            reply->statusCode = SRVR_UNDEFINED;
+                 ^
+src/calc_server.c:39:25: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            sprintf(reply->errorMsg,
+                         ^
+src/calc_server.c:42:21: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+              message->left_hand,
+                     ^
+src/calc_server.c:43:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->operator,
+               ^
+src/calc_server.c:44:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->right_hand
+               ^
+src/calc_server.c:48:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:49:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand / message->right_hand;
+               ^
+src/calc_server.c:49:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                 ^
+src/calc_server.c:49:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                                      ^
+src/calc_server.c:52:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                    ^
+src/calc_server.c:52:52: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                                                    ^
+src/calc_server.c:53:16: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           reply->statusCode = SRVR_OVERFLOW;
+                ^
+src/calc_server.c:54:24: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           sprintf(reply->errorMsg,
+                        ^
+src/calc_server.c:57:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->left_hand,
+              ^
+src/calc_server.c:58:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->operator,
+              ^
+src/calc_server.c:59:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->right_hand
+              ^
+src/calc_server.c:63:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:64:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand + message->right_hand;
+               ^
+src/calc_server.c:64:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                 ^
+src/calc_server.c:64:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                                      ^
+src/calc_server.c:67:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:68:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand - message->right_hand;
+               ^
+src/calc_server.c:68:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                 ^
+src/calc_server.c:68:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                                      ^
+src/calc_server.c:71:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:72:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand * message->right_hand;
+               ^
+src/calc_server.c:72:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                 ^
+src/calc_server.c:72:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                                      ^
+src/calc_server.c:75:9: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    reply->statusCode = SRVR_INVALID_OPERATOR;
+         ^
+src/calc_server.c:76:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    sprintf(reply->errorMsg,
+                 ^
+src/calc_server.c:79:13: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+      message->operator
+             ^
+src/calc_server.c:83:28: error: incompatible type for argument 3 of 'MsgReply'
+         MsgReply(rcvid, 0, reply, sizeof(reply));
+                            ^
+In file included from src/calc_server.c:6:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:777:12: note: expected 'const void *' but argument is of type 'server_response_t {aka struct server_response}'
+ extern int MsgReply(int __rcvid, long __status, const void *__msg, _Sizet __bytes);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+15:34:54 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:37:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->right_hand == 0){
+                    ^
+src/calc_server.c:38:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            reply->statusCode = SRVR_UNDEFINED;
+                 ^
+src/calc_server.c:39:25: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+            sprintf(reply->errorMsg,
+                         ^
+src/calc_server.c:42:21: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+              message->left_hand,
+                     ^
+src/calc_server.c:43:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->operator,
+               ^
+src/calc_server.c:44:15: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+        message->right_hand
+               ^
+src/calc_server.c:48:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:49:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand / message->right_hand;
+               ^
+src/calc_server.c:49:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                 ^
+src/calc_server.c:49:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand / message->right_hand;
+                                                      ^
+src/calc_server.c:52:20: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                    ^
+src/calc_server.c:52:52: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          if(message->left_hand > (INT_MAX - message->right_hand)){
+                                                    ^
+src/calc_server.c:53:16: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           reply->statusCode = SRVR_OVERFLOW;
+                ^
+src/calc_server.c:54:24: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+           sprintf(reply->errorMsg,
+                        ^
+src/calc_server.c:57:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->left_hand,
+              ^
+src/calc_server.c:58:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->operator,
+              ^
+src/calc_server.c:59:14: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+       message->right_hand
+              ^
+src/calc_server.c:63:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:64:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand + message->right_hand;
+               ^
+src/calc_server.c:64:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                 ^
+src/calc_server.c:64:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand + message->right_hand;
+                                                      ^
+src/calc_server.c:67:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:68:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand - message->right_hand;
+               ^
+src/calc_server.c:68:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                 ^
+src/calc_server.c:68:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand - message->right_hand;
+                                                      ^
+src/calc_server.c:71:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->statusCode = SRVR_OK;
+               ^
+src/calc_server.c:72:15: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+          reply->answer = message->left_hand * message->right_hand;
+               ^
+src/calc_server.c:72:33: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                 ^
+src/calc_server.c:72:54: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+          reply->answer = message->left_hand * message->right_hand;
+                                                      ^
+src/calc_server.c:75:9: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    reply->statusCode = SRVR_INVALID_OPERATOR;
+         ^
+src/calc_server.c:76:17: error: invalid type argument of '->' (have 'server_response_t {aka struct server_response}')
+    sprintf(reply->errorMsg,
+                 ^
+src/calc_server.c:79:13: error: invalid type argument of '->' (have 'client_send_t {aka struct client_send}')
+      message->operator
+             ^
+src/calc_server.c:83:28: error: incompatible type for argument 3 of 'MsgReply'
+         MsgReply(rcvid, 0, reply, sizeof(reply));
+                            ^
+In file included from src/calc_server.c:6:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:777:12: note: expected 'const void *' but argument is of type 'server_response_t {aka struct server_response}'
+ extern int MsgReply(int __rcvid, long __status, const void *__msg, _Sizet __bytes);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+15:36:16 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:83:28: error: incompatible type for argument 3 of 'MsgReply'
+         MsgReply(rcvid, 0, reply, sizeof(reply));
+                            ^
+In file included from src/calc_server.c:6:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:777:12: note: expected 'const void *' but argument is of type 'server_response_t {aka struct server_response}'
+ extern int MsgReply(int __rcvid, long __status, const void *__msg, _Sizet __bytes);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+15:36:21 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+15:40:10 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:33:34: error: incompatible type for argument 2 of 'MsgReceive'
+         rcvid = MsgReceive(chid, message, sizeof(message),
+                                  ^
+In file included from src/calc_server.c:6:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/neutrino.h:769:12: note: expected 'void *' but argument is of type 'client_send_t {aka struct client_send}'
+ extern int MsgReceive(int __chid, void *__msg, _Sizet __bytes, struct _msg_info *__info);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+15:40:16 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+15:47:28 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:47:34 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+15:48:53 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:46:30: error: unknown type name 's'
+  printf("%.2f", rmsg.answer);s
+                              ^
+src/calc_client.c:48:2: warning: parameter names (without types) in function declaration
+  ConnectDetach(coid);
+  ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+15:49:06 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+16:02:07 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:02:09 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:03:50 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:06:00 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:06:02 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:07:35 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:07:35 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:07:36 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:09:04 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:09:05 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:10:27 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:11:50 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+16:11:51 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:11:51 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:11:51 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:11:52 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:12:26 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+16:12:50 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:16:39 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+16:16:47 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:18:16 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:18:36 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+16:20:02 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:83:25: error: 'EOK' undeclared (first use in this function)
+         MsgReply(rcvid, EOK, &reply, sizeof(reply));
+                         ^
+src/calc_server.c:83:25: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+16:20:06 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+16:31:42 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+16:31:43 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:31:46 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+16:31:47 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:34:59 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+16:35:02 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+16:35:17 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:35:20 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+16:35:21 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:41:06 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:82:25: error: 'EOK' undeclared (first use in this function)
+         MsgReply(rcvid, EOK, &reply, sizeof(reply));
+                         ^
+src/calc_server.c:82:25: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+09:42:55 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  

@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "../../des_display/src/des.h";
+
+void start(Person);
+void scan(Person);
+void enterUnlock(Person);
+void enterOpen(Person);
+void weighed(Person);
+void enterClosed(Person);
+void enterLocked(Person);
+void leaveUnlock(Person);
+void leaveOpen(Person);
+void leaveClosed(Person);
+void leaveLocked(Person);
+void exitState(Person);
+
+void (*stateArray[])(Person) =
+{
+	start,
+	scan,
+	enterUnlock,
+	enterOpen,
+	weighed,
+	enterClosed,
+	enterLocked,
+	leaveUnlock,
+	leaveOpen,
+	leaveClosed,
+	leaveLocked,
+	exitState,
+	};
+
+	int main(int argc, char* argv[]) {
+		//setup connection for des_inputs
+		int rcvid;        // indicates who we should reply to
+		int chid;         // the channel ID
+		Display displayMessage;
+		Display inputMessage;
+		int reply = 0;
+
+
+		// create a channel --- Phase I
+		chid = ChannelCreate(0);
+		if (chid == -1) {
+			perror("failed to create the channel.");
+			exit(EXIT_FAILURE);
+		}
+
+		// this is typical of a server:  it runs forever --- Phase II
+		while (1) {
+			rcvid = MsgReceive(chid, &inputMessage, sizeof(message),
+			NULL);
+			(*stateArray[inputMessage.outputMessage])(inputMessage.person);
+			MsgReply(rcvid, EOK, &reply, sizeof(reply));
+		}
+		return EXIT_SUCCESS;
+	}

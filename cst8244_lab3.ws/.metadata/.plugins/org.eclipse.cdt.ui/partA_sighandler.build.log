@@ -1,0 +1,6 @@
+18:00:36 **** Incremental Build of configuration x86_64-debug for project partA_sighandler ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+18:00:36 Build Finished (took 126ms)
+

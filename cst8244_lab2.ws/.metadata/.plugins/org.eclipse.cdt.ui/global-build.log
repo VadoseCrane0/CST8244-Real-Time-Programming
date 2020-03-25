@@ -1,0 +1,35 @@
+13:53:45 **** Incremental Build of configuration x86_64-debug for project my_first_project ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:53:51 **** Incremental Build of configuration x86_64-debug for project my_first_project ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:06:25 **** Incremental Build of configuration x86_64-debug for project my_first_project ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/my_first_project.d,-MT,build/x86_64-debug/src/my_first_project.o -o build/x86_64-debug/src/my_first_project.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/my_first_project.c
+src/my_first_project.c: In function 'main':
+src/my_first_project.c:10:2: error: too many arguments to function 'puts'
+  puts("me: %d  parent: %d", getpid(), getppid());
+  ^
+In file included from src/my_first_project.c:1:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/stdio.h:177:12: note: declared here
+ extern int puts(const char *__s);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/my_first_project.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/my_first_project.o' failed
+14:07:46 **** Incremental Build of configuration x86_64-debug for project my_first_project ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/my_first_project.d,-MT,build/x86_64-debug/src/my_first_project.o -o build/x86_64-debug/src/my_first_project.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/my_first_project.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/my_first_project   build/x86_64-debug/src/my_first_project.o  
+14:09:24 **** Incremental Build of configuration x86_64-debug for project my_first_project ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/my_first_project.d,-MT,build/x86_64-debug/src/my_first_project.o -o build/x86_64-debug/src/my_first_project.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/my_first_project.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/my_first_project   build/x86_64-debug/src/my_first_project.o  
+14:11:46 **** Incremental Build of configuration x86_64-debug for project my_first_project ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/my_first_project.d,-MT,build/x86_64-debug/src/my_first_project.o -o build/x86_64-debug/src/my_first_project.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/my_first_project.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/my_first_project   build/x86_64-debug/src/my_first_project.o  
+14:13:14 **** Incremental Build of configuration x86_64-debug for project my_first_project ****
+make -j8 all 
+make: Nothing to be done for 'all'.

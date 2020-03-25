@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	sem = sem_open("Lab04_Semaphore", O_CREAT, S_IWOTH, 0);
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "../../des_display/src/des.h";
+
+void start(int, int);
+void scan(int, int);
+void enterUnlock(int, int);
+void enterOpen(int, int);
+void weighed(int, int);
+void enterClosed(int, int);
+void enterLocked(int, int);
+void leaveUnlock(int, int);
+void leaveOpen(int, int);
+void leaveClosed(int, int);
+void leaveLocked(int, int);
+void exitState(int, int);
+
+void (*stateArray[])(int, int) =
+{
+	start,
+	scan,
+	enterUnlock,
+	enterOpen,
+	weighed,
+	enterClosed,
+	enterLocked,
+	leaveUnlock,
+	leaveOpen,
+	leaveClosed,
+	leaveLocked,
+	exitState,
+	};
+
+	int main(int argc, char* argv[]) {
+		//setup connection for des_inputs
+		int chid;         // the channel ID
+		// create a channel --- Phase I
+		chid = ChannelCreate(0);
+		if (chid == -1) {
+			perror("failed to create the channel.");
+			exit(EXIT_FAILURE);
+		}
+
+		(*stateArray[START_STATE])(START_STATE);
+		return EXIT_SUCCESS;
+	}
+
+	void start(int chid, int rcvid){
+
+
+
+
+	}

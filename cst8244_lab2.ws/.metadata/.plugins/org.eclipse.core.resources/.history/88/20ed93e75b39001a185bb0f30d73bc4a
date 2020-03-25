@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	puts("Hello World from QNX Neutrino RTOS!!!"); /* prints Hello World!!! */
+	puts("@author Joseph Trottier (trot0097@algonquinlive.com)");
+	puts("TODO: 'display something unique about myself' ");
+	puts("@author Joseph Trottier (trot0097@algonquinlive.com)");
+	puts("@author Joseph Trottier (trot0097@algonquinlive.com)");
+	puts("@author Joseph Trottier (trot0097@algonquinlive.com)");
+	return EXIT_SUCCESS;
+}

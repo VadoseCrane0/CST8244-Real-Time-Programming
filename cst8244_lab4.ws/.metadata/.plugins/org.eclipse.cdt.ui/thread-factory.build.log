@@ -1,0 +1,6 @@
+17:45:27 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+17:45:27 Build Finished (took 228ms)
+

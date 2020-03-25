@@ -1,0 +1,736 @@
+13:10:36 **** Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+13:10:56 **** Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-waker.d,-MT,build/x86_64-debug/src/thread-waker.o -o build/x86_64-debug/src/thread-waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread-waker.o  
+15:42:44 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+src/thread_waker.c: In function 'main':
+src/thread_waker.c:18:6: error: incompatible types when assigning to type 'sem_t {aka struct _sync}' from type 'sem_t * {aka struct _sync *}'
+  sem = sem_open("Lab04_Semaphore", O_CREAT, S_IWOTH, 0);
+      ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_waker.o' failed
+make: *** [build/x86_64-debug/src/thread_waker.o] Error 1
+15:45:02 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+src/thread_waker.c: In function 'main':
+src/thread_waker.c:18:6: error: incompatible types when assigning to type 'sem_t {aka struct _sync}' from type 'sem_t * {aka struct _sync *}'
+  sem = sem_open("Lab04_Semaphore", 0);
+      ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_waker.o' failed
+make: *** [build/x86_64-debug/src/thread_waker.o] Error 1
+15:47:04 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:28:64: error: 'semValue' undeclared (first use in this function)
+   printf("Child thread %d unblocked\tStatus%d", currentThread, semValue);
+                                                                ^
+src/thread_factory.c:28:64: note: each undeclared identifier is reported only once for each function it appears in
+src/thread_factory.c: In function 'main':
+src/thread_factory.c:54:6: error: incompatible types when assigning to type 'sem_t {aka struct _sync}' from type 'sem_t * {aka struct _sync *}'
+  sem = sem_open("Lab04_Semaphore", O_CREAT, S_IWOTH, 0);
+      ^
+src/thread_factory.c:55:10: error: invalid operands to binary == (have 'sem_t {aka struct _sync}' and 'sem_t * {aka struct _sync *}')
+  if (sem == SEM_FAILED) {
+          ^
+src/thread_factory.c:56:46: error: incompatible type for argument 1 of 'strerror'
+   printf("sem_open failed :[%s]\n", strerror(sem));
+                                              ^
+In file included from src/thread_factory.c:7:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/string.h:79:14: note: expected 'int' but argument is of type 'sem_t {aka struct _sync}'
+ extern char *strerror(int __errnum);
+              ^
+src/thread_factory.c:67:16: error: incompatible type for argument 1 of 'sem_close'
+  i = sem_close(sem);
+                ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:53:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t {aka struct _sync}'
+ extern int sem_close(sem_t *__sem);
+            ^
+src/thread_factory.c:35:6: warning: unused variable 'rv' [-Wunused-variable]
+  int rv, numThreads, i;
+      ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/thread_factory.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_factory.o' failed
+15:48:42 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'main':
+src/thread_factory.c:54:6: error: incompatible types when assigning to type 'sem_t {aka struct _sync}' from type 'sem_t * {aka struct _sync *}'
+  sem = sem_open("Lab04_Semaphore", O_CREAT, S_IWOTH, 0);
+      ^
+src/thread_factory.c:55:10: error: invalid operands to binary == (have 'sem_t {aka struct _sync}' and 'sem_t * {aka struct _sync *}')
+  if (sem == SEM_FAILED) {
+          ^
+src/thread_factory.c:56:46: error: incompatible type for argument 1 of 'strerror'
+   printf("sem_open failed :[%s]\n", strerror(sem));
+                                              ^
+In file included from src/thread_factory.c:7:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/string.h:79:14: note: expected 'int' but argument is of type 'sem_t {aka struct _sync}'
+ extern char *strerror(int __errnum);
+              ^
+src/thread_factory.c:67:16: error: incompatible type for argument 1 of 'sem_close'
+  i = sem_close(sem);
+                ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:53:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t {aka struct _sync}'
+ extern int sem_close(sem_t *__sem);
+            ^
+src/thread_factory.c:35:6: warning: unused variable 'rv' [-Wunused-variable]
+  int rv, numThreads, i;
+      ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_factory.o' failed
+make: *** [build/x86_64-debug/src/thread_factory.o] Error 1
+15:49:50 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:26:12: warning: passing argument 1 of 'sem_wait' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_wait(&sem);
+            ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:60:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_wait(sem_t *__sem);
+            ^
+src/thread_factory.c:27:16: warning: passing argument 1 of 'sem_getvalue' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_getvalue(&sem, &semValue);
+                ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:55:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_getvalue(sem_t *__sem, int *__value);
+            ^
+src/thread_factory.c: In function 'main':
+src/thread_factory.c:56:46: warning: passing argument 1 of 'strerror' makes integer from pointer without a cast [-Wint-conversion]
+   printf("sem_open failed :[%s]\n", strerror(sem));
+                                              ^
+In file included from src/thread_factory.c:7:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/string.h:79:14: note: expected 'int' but argument is of type 'sem_t * {aka struct _sync *}'
+ extern char *strerror(int __errnum);
+              ^
+src/thread_factory.c:35:6: warning: unused variable 'rv' [-Wunused-variable]
+  int rv, numThreads, i;
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+15:50:07 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:50:16 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+src/thread_waker.c: In function 'main':
+src/thread_waker.c:26:14: warning: passing argument 1 of 'sem_post' from incompatible pointer type [-Wincompatible-pointer-types]
+     sem_post(&sem);
+              ^
+In file included from src/thread_waker.c:11:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:57:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_post(sem_t *__sem);
+            ^
+src/thread_waker.c:22:3: warning: 'numWakeup' is used uninitialized in this function [-Wuninitialized]
+   scanf(" %d", numWakeup);
+   ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+15:51:15 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+src/thread_waker.c: In function 'main':
+src/thread_waker.c:18:6: error: incompatible types when assigning to type 'sem_t {aka struct _sync}' from type 'sem_t * {aka struct _sync *}'
+  sem = sem_open("Lab04_Semaphore", 0);
+      ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/thread_waker.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_waker.o' failed
+15:52:14 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:52:15 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:52:19 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:52:26 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'main':
+src/thread_factory.c:54:6: error: incompatible types when assigning to type 'sem_t {aka struct _sync}' from type 'sem_t * {aka struct _sync *}'
+  sem = sem_open("Lab04_Semaphore", O_CREAT, S_IWOTH, 0);
+      ^
+src/thread_factory.c:55:10: error: invalid operands to binary == (have 'sem_t {aka struct _sync}' and 'sem_t * {aka struct _sync *}')
+  if (sem == SEM_FAILED) {
+          ^
+src/thread_factory.c:56:46: error: incompatible type for argument 1 of 'strerror'
+   printf("sem_open failed :[%s]\n", strerror(sem));
+                                              ^
+In file included from src/thread_factory.c:7:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/string.h:79:14: note: expected 'int' but argument is of type 'sem_t {aka struct _sync}'
+ extern char *strerror(int __errnum);
+              ^
+src/thread_factory.c:67:16: error: incompatible type for argument 1 of 'sem_close'
+  i = sem_close(sem);
+                ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:53:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t {aka struct _sync}'
+ extern int sem_close(sem_t *__sem);
+            ^
+src/thread_factory.c:35:6: warning: unused variable 'rv' [-Wunused-variable]
+  int rv, numThreads, i;
+      ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/thread_factory.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_factory.o' failed
+15:52:45 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:26:12: warning: passing argument 1 of 'sem_wait' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_wait(&sem);
+            ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:60:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_wait(sem_t *__sem);
+            ^
+src/thread_factory.c:27:16: warning: passing argument 1 of 'sem_getvalue' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_getvalue(&sem, &semValue);
+                ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:55:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_getvalue(sem_t *__sem, int *__value);
+            ^
+src/thread_factory.c: In function 'main':
+src/thread_factory.c:56:46: warning: passing argument 1 of 'strerror' makes integer from pointer without a cast [-Wint-conversion]
+   printf("sem_open failed :[%s]\n", strerror(sem));
+                                              ^
+In file included from src/thread_factory.c:7:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/string.h:79:14: note: expected 'int' but argument is of type 'sem_t * {aka struct _sync *}'
+ extern char *strerror(int __errnum);
+              ^
+src/thread_factory.c:35:6: warning: unused variable 'rv' [-Wunused-variable]
+  int rv, numThreads, i;
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+15:54:21 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:54:26 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+src/thread_waker.c: In function 'main':
+src/thread_waker.c:26:14: warning: passing argument 1 of 'sem_post' from incompatible pointer type [-Wincompatible-pointer-types]
+     sem_post(&sem);
+              ^
+In file included from src/thread_waker.c:11:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:57:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_post(sem_t *__sem);
+            ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+15:54:47 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+15:54:58 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:55:30 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:26:12: warning: passing argument 1 of 'sem_wait' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_wait(&sem);
+            ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:60:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_wait(sem_t *__sem);
+            ^
+src/thread_factory.c:27:16: warning: passing argument 1 of 'sem_getvalue' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_getvalue(&sem, &semValue);
+                ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:55:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_getvalue(sem_t *__sem, int *__value);
+            ^
+src/thread_factory.c: In function 'main':
+src/thread_factory.c:56:46: warning: passing argument 1 of 'strerror' makes integer from pointer without a cast [-Wint-conversion]
+   printf("sem_open failed :[%s]\n", strerror(sem));
+                                              ^
+In file included from src/thread_factory.c:7:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/string.h:79:14: note: expected 'int' but argument is of type 'sem_t * {aka struct _sync *}'
+ extern char *strerror(int __errnum);
+              ^
+src/thread_factory.c:35:6: warning: unused variable 'rv' [-Wunused-variable]
+  int rv, numThreads, i;
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+15:55:41 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:55:46 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:56:27 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:26:12: warning: passing argument 1 of 'sem_wait' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_wait(&sem);
+            ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:60:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_wait(sem_t *__sem);
+            ^
+src/thread_factory.c:27:16: warning: passing argument 1 of 'sem_getvalue' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_getvalue(&sem, &semValue);
+                ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:55:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_getvalue(sem_t *__sem, int *__value);
+            ^
+src/thread_factory.c: In function 'main':
+src/thread_factory.c:56:46: warning: passing argument 1 of 'strerror' makes integer from pointer without a cast [-Wint-conversion]
+   printf("sem_open failed :[%s]\n", strerror(sem));
+                                              ^
+In file included from src/thread_factory.c:7:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/string.h:79:14: note: expected 'int' but argument is of type 'sem_t * {aka struct _sync *}'
+ extern char *strerror(int __errnum);
+              ^
+src/thread_factory.c:35:6: warning: unused variable 'rv' [-Wunused-variable]
+  int rv, numThreads, i;
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+15:56:32 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:57:33 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:25:12: warning: passing argument 1 of 'sem_wait' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_wait(&sem);
+            ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:60:12: note: expected 'sem_t * {aka struct _sync *}' but argument is of type 'sem_t ** {aka struct _sync **}'
+ extern int sem_wait(sem_t *__sem);
+            ^
+src/thread_factory.c: In function 'main':
+src/thread_factory.c:54:46: warning: passing argument 1 of 'strerror' makes integer from pointer without a cast [-Wint-conversion]
+   printf("sem_open failed :[%s]\n", strerror(sem));
+                                              ^
+In file included from src/thread_factory.c:7:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/string.h:79:14: note: expected 'int' but argument is of type 'sem_t * {aka struct _sync *}'
+ extern char *strerror(int __errnum);
+              ^
+src/thread_factory.c:33:6: warning: unused variable 'rv' [-Wunused-variable]
+  int rv, numThreads, i;
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+15:58:56 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+15:58:59 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:21:43 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:21:55 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:23:13 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+16:25:11 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:25:30 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:25:34 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+src/thread_waker.c: In function 'main':
+src/thread_waker.c:22:3: warning: 'numWakeup' is used uninitialized in this function [-Wuninitialized]
+   scanf(" %d", numWakeup);
+   ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+16:25:48 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+16:25:52 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:25:59 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:28:07 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+16:28:08 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:33:05 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+16:33:07 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:34:24 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+16:34:25 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:34:44 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+16:34:45 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:35:12 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+16:35:14 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:56:15 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:56:22 **** Clean-only build of configuration x86_64-debug for project thread-factory ****
+make -j8 clean 
+rm -fr build/x86_64-debug
+16:56:23 **** Clean-only build of configuration x86_64-debug for project thread-waker ****
+make -j8 clean 
+rm -fr build/x86_64-debug
+16:56:25 **** Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+16:56:30 **** Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:27:31: warning: passing argument 2 of 'pthread_join' from incompatible pointer type [-Wincompatible-pointer-types]
+   pthread_join(currentThread, &status);
+                               ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: expected 'void **' but argument is of type 'int *'
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+16:57:50 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:27:12: error: too few arguments to function 'pthread_join'
+   status = pthread_join(currentThread);
+            ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: declared here
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_factory.o' failed
+make: *** [build/x86_64-debug/src/thread_factory.o] Error 1
+17:02:41 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:28:3: error: 'status' undeclared (first use in this function)
+   status = pthread_join(currentThread, );
+   ^
+src/thread_factory.c:28:3: note: each undeclared identifier is reported only once for each function it appears in
+src/thread_factory.c:28:40: error: expected expression before ')' token
+   status = pthread_join(currentThread, );
+                                        ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_factory.o' failed
+make: *** [build/x86_64-debug/src/thread_factory.o] Error 1
+17:02:54 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:28:3: error: 'status' undeclared (first use in this function)
+   status = pthread_join(currentThread, semvalue);
+   ^
+src/thread_factory.c:28:3: note: each undeclared identifier is reported only once for each function it appears in
+src/thread_factory.c:28:40: warning: passing argument 2 of 'pthread_join' makes pointer from integer without a cast [-Wint-conversion]
+   status = pthread_join(currentThread, semvalue);
+                                        ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: expected 'void **' but argument is of type 'int'
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/thread_factory.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_factory.o' failed
+17:03:03 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:03:05 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:03:18 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:06:37 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:06:43 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:28:3: error: 'status' undeclared (first use in this function)
+   status = pthread_join(currentThread, &semvalue);
+   ^
+src/thread_factory.c:28:3: note: each undeclared identifier is reported only once for each function it appears in
+src/thread_factory.c:28:40: warning: passing argument 2 of 'pthread_join' from incompatible pointer type [-Wincompatible-pointer-types]
+   status = pthread_join(currentThread, &semvalue);
+                                        ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: expected 'void **' but argument is of type 'int *'
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_factory.o' failed
+make: *** [build/x86_64-debug/src/thread_factory.o] Error 1
+17:08:26 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:27:21: warning: passing argument 2 of 'sem_getvalue' from incompatible pointer type [-Wincompatible-pointer-types]
+   sem_getvalue(sem, &semvalue);
+                     ^
+In file included from src/thread_factory.c:3:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/semaphore.h:55:12: note: expected 'int *' but argument is of type 'int **'
+ extern int sem_getvalue(sem_t *__sem, int *__value);
+            ^
+src/thread_factory.c:28:31: warning: passing argument 2 of 'pthread_join' from incompatible pointer type [-Wincompatible-pointer-types]
+   pthread_join(currentThread, &semvalue);
+                               ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: expected 'void **' but argument is of type 'int **'
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+src/thread_factory.c:29:69: error: 'status' undeclared (first use in this function)
+   printf("Child thread %d unblocked\t Status: %d\n", currentThread, status);
+                                                                     ^
+src/thread_factory.c:29:69: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/thread_factory.o' failed
+make: *** [build/x86_64-debug/src/thread_factory.o] Error 1
+17:08:45 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:28:31: warning: passing argument 2 of 'pthread_join' from incompatible pointer type [-Wincompatible-pointer-types]
+   pthread_join(currentThread, &semvalue);
+                               ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: expected 'void **' but argument is of type 'int **'
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:09:03 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:28:31: warning: passing argument 2 of 'pthread_join' from incompatible pointer type [-Wincompatible-pointer-types]
+   pthread_join(currentThread, semvalue);
+                               ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: expected 'void **' but argument is of type 'int *'
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:09:10 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:28:31: warning: passing argument 2 of 'pthread_join' from incompatible pointer type [-Wincompatible-pointer-types]
+   pthread_join(currentThread, &*semvalue);
+                               ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: expected 'void **' but argument is of type 'int *'
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:09:16 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:28:31: warning: passing argument 2 of 'pthread_join' from incompatible pointer type [-Wincompatible-pointer-types]
+   pthread_join(currentThread, *&semvalue);
+                               ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: expected 'void **' but argument is of type 'int *'
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:09:20 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+src/thread_factory.c: In function 'childThread':
+src/thread_factory.c:28:31: warning: passing argument 2 of 'pthread_join' from incompatible pointer type [-Wincompatible-pointer-types]
+   pthread_join(currentThread, semvalue);
+                               ^
+In file included from src/thread_factory.c:2:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/pthread.h:214:12: note: expected 'void **' but argument is of type 'int *'
+ extern int pthread_join(pthread_t __thr, void **__value_ptr);
+            ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:11:14 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:11:34 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:11:36 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:11:44 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:13:54 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:14:03 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:14:11 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:24:20 **** Clean-only build of configuration x86_64-debug for project thread-factory ****
+make -j8 clean 
+rm -fr build/x86_64-debug
+17:24:21 **** Clean-only build of configuration x86_64-debug for project thread-waker ****
+make -j8 clean 
+rm -fr build/x86_64-debug
+17:24:26 **** Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:24:31 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:24:49 **** Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+17:25:01 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:25:51 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:26:24 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:26:26 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:27:07 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:27:09 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:28:03 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:28:05 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:29:00 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:29:25 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:29:27 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:30:48 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:31:12 **** Clean-only build of configuration x86_64-debug for project thread-factory ****
+make -j8 clean 
+rm -fr build/x86_64-debug
+17:31:12 **** Clean-only build of configuration x86_64-debug for project thread-waker ****
+make -j8 clean 
+rm -fr build/x86_64-debug
+17:31:18 **** Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:31:19 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:31:36 **** Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+17:34:07 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:34:09 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:36:00 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:36:02 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:36:17 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:44:51 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:45:07 **** Clean-only build of configuration x86_64-debug for project thread-factory ****
+make -j8 clean 
+rm -fr build/x86_64-debug
+17:45:07 **** Clean-only build of configuration x86_64-debug for project thread-waker ****
+make -j8 clean 
+rm -fr build/x86_64-debug
+17:45:21 **** Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_factory.d,-MT,build/x86_64-debug/src/thread_factory.o -o build/x86_64-debug/src/thread_factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_factory.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread_factory.o  
+17:45:27 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:45:37 **** Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread_waker.d,-MT,build/x86_64-debug/src/thread_waker.o -o build/x86_64-debug/src/thread_waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread_waker.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread_waker.o  
+17:45:49 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j8 all 
+make: Nothing to be done for 'all'.

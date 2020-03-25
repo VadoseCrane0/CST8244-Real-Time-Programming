@@ -1,0 +1,6 @@
+16:35:21 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+16:35:21 Build Finished (took 117ms)
+

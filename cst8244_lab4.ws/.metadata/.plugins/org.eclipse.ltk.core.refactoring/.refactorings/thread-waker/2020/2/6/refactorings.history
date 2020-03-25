@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;thread-waker/src/thread-waker.c&apos; to &apos;thread_waker.c&apos;" description="Rename resource &apos;thread-waker.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/thread-waker.c" name="thread_waker.c" stamp="1580673912127" updateReferences="true"/>
+</session>
