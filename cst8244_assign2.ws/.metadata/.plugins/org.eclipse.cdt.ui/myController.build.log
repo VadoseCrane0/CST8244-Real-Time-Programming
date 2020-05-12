@@ -1,0 +1,7 @@
+15:17:32 **** Build of configuration x86_64-debug for project myController ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myController   build/x86_64-debug/src/myController.o  
+
+15:17:32 Build Finished (took 281ms)
+

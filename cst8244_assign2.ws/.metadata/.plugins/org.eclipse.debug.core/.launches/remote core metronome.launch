@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.qnx.tools.ide.qde.ui.QDERemoteCoreLaunch">
+<booleanAttribute key="com.qnx.tools.ide.qde.core.LOAD_FROM_TARGET" value="true"/>
+<stringAttribute key="com.qnx.tools.ide.qde.core.REMOTE_COREFILE_PATH" value="/root/metronome.core"/>
+<stringAttribute key="com.qnx.tools.ide.qde.core.TARGET_ATTR" value="192.168.23.128"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="C:\Users\vados\ide-7.0-workspace\cst8244_assign2.ws\metronome\build\x86_64-debug\metronome"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="metronome"/>
+</launchConfiguration>

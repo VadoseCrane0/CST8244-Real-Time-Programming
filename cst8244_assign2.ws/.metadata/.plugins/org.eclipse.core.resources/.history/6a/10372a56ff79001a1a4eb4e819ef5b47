@@ -1,0 +1,24 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <sys/iofunc.h>
+#include <sys/dispatch.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <errno.h>
+
+#define ATTACH_POINT "metronome"
+
+char data[255];
+int server_coid;
+
+typedef union {
+	struct _pulse pulse;
+	char msg[255];
+} my_message_t;
+
+int beatPerMinute;
+int timeSigTop;
+int timeSigBottom;
+
+

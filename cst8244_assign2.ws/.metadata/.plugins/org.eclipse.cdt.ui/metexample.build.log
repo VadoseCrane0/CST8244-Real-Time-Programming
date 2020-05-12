@@ -1,0 +1,37 @@
+12:11:37 **** Incremental Build of configuration x86_64-debug for project metexample ****
+make -j8 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/metexample.d,-MT,build/x86_64-debug/src/metexample.o -o build/x86_64-debug/src/metexample.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/metexample.c
+src/metexample.c: In function 'io_read':
+src/metexample.c:148:5: error: 'beatPerMinute' undeclared (first use in this function)
+     beatPerMinute, time_sig_top, time_sig_bottom, secs_per_beat, nanoSecs);
+     ^
+src/metexample.c:148:5: note: each undeclared identifier is reported only once for each function it appears in
+src/metexample.c:148:20: error: 'time_sig_top' undeclared (first use in this function)
+     beatPerMinute, time_sig_top, time_sig_bottom, secs_per_beat, nanoSecs);
+                    ^
+src/metexample.c:148:34: error: 'time_sig_bottom' undeclared (first use in this function)
+     beatPerMinute, time_sig_top, time_sig_bottom, secs_per_beat, nanoSecs);
+                                  ^
+src/metexample.c:148:51: error: 'secs_per_beat' undeclared (first use in this function)
+     beatPerMinute, time_sig_top, time_sig_bottom, secs_per_beat, nanoSecs);
+                                                   ^
+src/metexample.c:148:66: error: 'nanoSecs' undeclared (first use in this function)
+     beatPerMinute, time_sig_top, time_sig_bottom, secs_per_beat, nanoSecs);
+                                                                  ^
+src/metexample.c: In function 'main':
+src/metexample.c:265:68: warning: passing argument 5 of 'resmgr_attach' makes integer from pointer without a cast [-Wint-conversion]
+  id = resmgr_attach(dpp, NULL, "/dev/local/metronome", _FTYPE_ANY, NULL, &connect_funcs, &io_funcs, &ioattr);
+                                                                    ^
+In file included from src/metexample.c:7:0:
+C:/Users/vados/qnx700/target/qnx7/usr/include/sys/dispatch.h:103:5: note: expected 'unsigned int' but argument is of type 'void *'
+ int resmgr_attach(dispatch_t *dpp, resmgr_attr_t *attr, const char *path,
+     ^
+src/metexample.c:236:6: warning: variable 'id' set but not used [-Wunused-but-set-variable]
+  int id;
+      ^
+cc: C:/Users/vados/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/metexample.o' failed
+make: *** [build/x86_64-debug/src/metexample.o] Error 1
+
+12:11:37 Build Finished (took 225ms)
+

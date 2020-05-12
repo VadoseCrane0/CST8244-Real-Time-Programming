@@ -1,0 +1,40 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <sys/iofunc.h>
+#include <sys/dispatch.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <errno.h>
+
+#define ATTACH_POINT "metronome"
+#define METRONOME_PULSE_CODE _PULSE_CODE_MINAVAIL
+#define PAUSE_PULSE_CODE (METRONOME_PULSE_CODE + 1)
+#define STOP_PULSE_CODE (METRONOME_PULSE_CODE + 2)
+
+char data[255];
+typedef union {
+	struct _pulse pulse;
+	char msg[255];
+} my_message_t;
+
+int beatPerMinute;
+int time_sig_top;
+int time_sig_bottom;
+
+struct DataTableRow {
+	int time_sig_top;
+	int time_sig_bottom;
+	int interval_per_beat;
+	char * interval;
+}typedef DataTableRow;
+
+DataTableRow t[] = {
+		{ 2, 4, 4, "|1&2&" },
+		{ 3, 4, 6, "|1&2&3&" },
+		{ 4, 4, 8, "|1&2&3&4&" },
+		{ 5, 4, 10, "|1&2&3&4-5-" }, { 3, 8, 6, "|1-2-3-" },
+		{ 6, 8, 6, "|1&a2&a" },
+		{ 9, 8, 9, "|1&a2&a3&a" },
+		{ 12, 8, 12, "|1&a2&a3&a4&a" }
+};
